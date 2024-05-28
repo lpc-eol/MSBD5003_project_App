@@ -32,7 +32,7 @@ def fetch_data():
 
 # Set directories
 
-FEATURES_DIR = "../features"
+FEATURES_DIR = "./features"
 
 # Features paths
 BASE_FEATURES = FEATURES_DIR + "/base_features.json"
