@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Bitcoin Price Prediction", page_ic
 st.markdown(config.condensed_page_style, unsafe_allow_html=True)
 
 st.sidebar.title("MSBD5003 - Group 9")
-st.image('./image/bitcoin.png',width=150,output_format="PNG")
+st.image('ui/image/bitcoin.png',width=150,output_format="PNG")
 
 st.title("Bitcoin Price Prediction ")
 st.subheader("Background")
