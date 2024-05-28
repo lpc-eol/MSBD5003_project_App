@@ -39,10 +39,13 @@ BASE_FEATURES = FEATURES_DIR + "/base_features.json"
 BASE_AND_MOST_CORR_FEATURES = FEATURES_DIR + "/base_and_most_corr_features.json"
 BASE_AND_LEAST_CORR_FEATURES = FEATURES_DIR + "/base_and_least_corr_features.json"
 
-# Load features from JSON
 def load_features(path):
-    with open(path, 'r') as file:
+    print("Current working directory:", os.getcwd())
+    full_path = os.path.abspath(path)
+    print("Trying to load file from:", full_path)
+    with open(full_path, 'r') as file:
         return json.load(file)
+
 
 st.set_page_config(layout="wide", page_title="Feature Selection", page_icon="📈")
 st.markdown(
