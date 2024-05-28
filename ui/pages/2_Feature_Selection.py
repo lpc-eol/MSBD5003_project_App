@@ -31,8 +31,7 @@ def fetch_data():
     return pd.DataFrame(data)
 
 # Set directories
-ROOT_DIR = "/Users/leochoizero/Desktop/code_files/MSBD5003_project_UI"
-FEATURES_DIR = ROOT_DIR + "/features"
+FEATURES_DIR = "/features"
 
 # Features paths
 FEATURES_CORRELATION = FEATURES_DIR + "/features_correlation.json"
