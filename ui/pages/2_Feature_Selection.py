@@ -31,6 +31,7 @@ def fetch_data():
     return pd.DataFrame(data)
 
 # Set directories
+
 FEATURES_DIR = "../features"
 
 # Features paths
