@@ -40,11 +40,13 @@ BASE_AND_MOST_CORR_FEATURES = FEATURES_DIR + "/base_and_most_corr_features.json"
 BASE_AND_LEAST_CORR_FEATURES = FEATURES_DIR + "/base_and_least_corr_features.json"
 
 def load_features(path):
-    print("Current working directory:", os.getcwd())
     full_path = os.path.abspath(path)
-    print("Trying to load file from:", full_path)
-    with open(full_path, 'r') as file:
-        return json.load(file)
+    if os.path.exists(full_path):
+        with open(full_path, 'r') as file:
+            return json.load(file)
+    else:
+        st.error(f"File not found: {full_path}")
+        return {}
 
 
 st.set_page_config(layout="wide", page_title="Feature Selection", page_icon="📈")
