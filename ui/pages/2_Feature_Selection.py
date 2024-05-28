@@ -31,7 +31,7 @@ def fetch_data():
     return pd.DataFrame(data)
 
 # Set directories
-FEATURES_DIR = "/features"
+FEATURES_DIR = "../features"
 
 # Features paths
 FEATURES_CORRELATION = FEATURES_DIR + "/features_correlation.json"
