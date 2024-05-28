@@ -36,7 +36,7 @@ FEATURES_DIR = "../features"
 
 # Features paths
 FEATURES_CORRELATION = FEATURES_DIR + "/features_correlation.json"
-BASE_FEATURES = FEATURES_DIR + "/base_features.json"
+BASE_FEATURES = FEATURES_DIR + "/features/base_features.json"
 BASE_AND_MOST_CORR_FEATURES = FEATURES_DIR + "/base_and_most_corr_features.json"
 BASE_AND_LEAST_CORR_FEATURES = FEATURES_DIR + "/base_and_least_corr_features.json"
 
